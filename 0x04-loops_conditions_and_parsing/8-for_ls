@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
 #Comment
+i=0
+if [ school exist ]
+	echo "school exists"
+
+	
