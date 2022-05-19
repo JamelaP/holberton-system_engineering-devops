@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
 #Comment
+var="$(pgrep -f 7-highlander)"
+kill -9 "$var"
