@@ -4,18 +4,21 @@
 minute=1
 h=0
 while [ $h -le 12 ] && [ $minute -le 59 ]; do 
-	case
+	case $minute in 
 
-	1) 
-	echo "Hour: $hour"
-	echo minute 
-	((minute ++))
+		1) 
+			echo "Hour: $h"
+			echo $minute 
+			((minute++));;
 
-	59) 
-	echo "$minute"
-	((hour ++))
-	((minute = 1))
+		59) 
+			echo "$minute"
+			((h++))
+			((minute = 1));;
 
-	echo "$minute"
-	((minute ++))
+		*) 
+			echo "$minute"
+			((minute++));;
+
+	esac
 done	
