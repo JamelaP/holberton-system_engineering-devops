@@ -3,6 +3,19 @@
 
 i=1
 h=0
-while [ $h -le 12 ]; do
-	
+while (i <20)
+	case
 
+	4) 
+	echo "Hour: $hour"
+	echo minute 
+	((minute ++))
+
+	9) 
+	echo "$minute"
+	((hour ++))
+	((minute = 1))
+
+	echo "$minute"
+	((minute ++))
+done	

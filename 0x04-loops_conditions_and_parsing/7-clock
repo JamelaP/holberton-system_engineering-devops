@@ -1,2 +1,21 @@
 #!/usr/bin/env bash
 #Comment
+
+minute=1
+h=0
+while [ $h -le 12 ] && [ $minute -le 59 ]; do 
+	case
+
+	1) 
+	echo "Hour: $hour"
+	echo minute 
+	((minute ++))
+
+	59) 
+	echo "$minute"
+	((hour ++))
+	((minute = 1))
+
+	echo "$minute"
+	((minute ++))
+done	
